@@ -1,3 +1,5 @@
+//import java.util.Scanner;
+
 /**
  * This service class is intended to contain the basic logic for playing the number guessing game.
  * Separating menu logic and game logic is good for two reasons: it makes both classes as simple
@@ -27,6 +29,14 @@ public class GameService {
      * @return true if guessNumber is equal to the secretNumber, false otherwise.
      */
     public boolean checkGuess(double guessNumber) {
-        return false;
+        //return false;
+
+        boolean Answer = false;
+
+        if (guessNumber==secretNumber) {
+           Answer=true;
+        }
+
+        return Answer;
     }
 }
